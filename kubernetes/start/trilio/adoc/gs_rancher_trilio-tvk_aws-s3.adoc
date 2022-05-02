@@ -30,8 +30,12 @@ One of the primary benefits of running a Kubernetes environment is flexibility, 
 Traditional database deployments exist in fairly static configurations and environments.  The beauty of running a data-oriented service
 on Kubernetes lies in maintaining stability while enabling adaptability to meet real-world situations.
 
-Imagine a scenario where your e-commerce site is consistently taking 100 orders per day.  Suddenly, a viral marketing event occurs,
-and your site is pushed to 5000 orders per day for a day.  This increase could easily lead to data overload – or worse, corruption or downtime, which could result to considerable loss of revenue.  Having a way to design for such failure scenarios and maintain resilient operations is a tangible market advantage. Quite simply, when it comes to your data, all the eggs are literally in one basket. The entire value of you corporate IP is attached to this living data. Designing around failure scenarios is key to business continuity.
+Imagine a scenario where your e-commerce site is consistently taking 100 orders per day.
+Suddenly, a viral marketing event occurs, and your site is pushed to 5000 orders per day for a day.
+This increase could easily lead to data overload – or worse, corruption or downtime, which could result to considerable loss of revenue.
+Having a way to design for such failure scenarios and maintain resilient operations is a tangible market advantage.
+Quite simply, when it comes to your data, all the eggs are literally in one basket.
+The entire value of you corporate IP is attached to this living data. Designing around failure scenarios is key to business continuity.
 
 Today’s IT environment is shifting to cloud native solutions focused on containerized applications in Kubernetes clusters running everywhere – from on-premises data centers, to the cloud and at the edge. Business continuity in this diverse and dynamic landscape requires new approaches.
 
@@ -81,7 +85,8 @@ Trilio provides and will continue to innovate its strategy to protect against ra
 === Scope
 
 // This guide will help you take the first steps to 
-This guide will help you take the first steps in implementing SUSE Rancher on AWS with TrilioVault software to defeat Ransomware.
+//This guide will help you take the first steps in implementing SUSE Rancher on AWS with TrilioVault software to defeat Ransomware.
+This guide will help you take the first steps to use TrilioVault for Kubernetes and Amazon S3 to implement immutable backups of your Kubernetes applications and mitigate potential attacks, such as ransomware.
 
 
 === Audience
@@ -257,13 +262,9 @@ TrilioVault for Kubernetes with Amazon S3 provides enhanced data protection for 
 //* https://url[reference-title]
 //* https://url/[reference-title]
 
-* https://www.ondat.io/[Ondat.io]
-* https://www.suse.com/[SUSE.com]
-* https://docs.ondat.io/[Ondat documentation]
-* https://rancher.com/docs/[SUSE Rancher documentation]
-* https://www.suse.com/community/[SUSE & Rancher Community]
-* https://www.percona.com/doc/kubernetes-operator-for-psmongodb/index.html[Percona distribution for MongoDB operator]
-
+* Res1
+* Res2
+* Res3
 
 
 
