@@ -1,0 +1,128 @@
+ifdef::RA,RC,RI,GS[]
+
+== Introduction
+
+On the digital transformation journey to a full cloud-native landscape, utilization of microservices becomes the main approach with the dominant technology for such container orchestration being Kubernetes.{wj}footnote:[https://kubernetes.io/]
+With its large community of developers and abundant features and capabilities, Kubernetes has become the de-facto standard and is included across most container-as-a-service platforms.  With all of these technologies in place, both developer and operation teams can effectively deploy, manage and deliver functionality to their end users in a resilient and agile manner.
+
+=== Motivation
+
+// ifdef::focusRancher[ include::./SA-{an_Rancher}.adoc[]]
+
+// ifdef::focusK3s,focusRKE1,focusRKE2[ include::./SA-Kubernetes.adoc[]]
+
+// ifdef::RC[]
+Once on such a digital transformation journey, also relevant to focus on areas like:
+
+Workload(s)::
+Determine how to manage and launch internally developed containerized, microservice workloads
++
+ifdef::iISV[]
+or leverage provided offerings from Independent Software Vendors (ISV) such as
+ifdef::ISV-FixMe[]
++
+** add an ISV pointer (R)
+endif::ISV-FixMe[]
+endif::iISV[]
+
+Kubernetes::
++
+ifdef::focusRancher[]
+include::./SA-{an_Rancher}.adoc[]
+endif::focusRancher[]
+ifdef::focusK3s,focusRKE1,focusRKE2[]
+include::./SA-Kubernetes.adoc[]
+endif::focusK3s,focusRKE1,focusRKE2[]
+
+Compute Platform(s)::
+To optimize availability, performance, scalability and integrity, assess current system or hosting platforms
++
+ifdef::iCSP,iIHV[]
+ifdef::iIHV[]
+from Independent Hardware Vendors (IHV), such as
+ifdef::IHV-Ampere[link:{vn_Ampere_homePage}[{vn_Ampere}] (R)]
+ifdef::IHV-Cisco[link:{vn_Cisco_homePage}[{vn_Cisco}] (R)]
+ifdef::IHV-Dell[link:{vn_Dell_homePage}[{vn_Dell}] (R)]
+ifdef::IHV-Fujitsu[link:{vn_Fujitsu_homePage}[{vn_Fujitsu}] (R)]
+ifdef::IHV-HPE[link:{vn_HPE_homePage}[{vn_HPE}] (R)]
+ifdef::IHV-HPI[link:{vn_HPI_homePage}[{vn_HPI}] (R)]
+ifdef::IHV-IBM[link:{vn_IBM_homePage}[{vn_IBM}] (R)]
+ifdef::IHV-Lenovo[link:{vn_Lenovo_homePage}[{vn_Lenovo}] (R)]
+ifdef::IHV-SMCi[link:{vn_SMCi_homePage}[{vn_SMCi}] (R)]
+as the platform for physical, baremetal, hypervisors and virtual machines
+endif::iIHV[]
+ifdef::iCSP[]
+from Cloud Service Providers (CSP), such as
++
+ifdef::CSP-Amazon[link:{pn_EKS_homePage}[{pn_EKS}] (R)]
+ifdef::CSP-Google[link:{pn_GKS_homePage}[{pn_GKS}] (R)]
+ifdef::CSP-Microsoft[link:{pn_AKS_homePage}[{pn_AKS}] (R)]
++
+which can span baremetal, virtual machines plus hosted Kubernetes services
+endif::iCSP[]
+endif::iCSP,iIHV[]
+
+// endif::RC[]
+
+=== Scope
+
+The scope of this document is to provide a
+ifndef::RC,RI,GS[]
+detailed
+ifdef::RA[<<g-ra>>]
+for
+endif::RC,RI,GS[]
+ifndef::RI,GS[]
+layered
+ifdef::RA+RC[<<g-rc>>]
+for
+endif::RI,GS[]
+ifndef::RC,GS[]
+general
+ifdef::RA+RI[<<g-ri>>]
+of
+endif::RC,GS[]
+ifndef::RC,RI[]
+simplified,
+ifdef::RA+GS[<<g-gs>>]
+approach for
+endif::RC,RI[]
+ifdef::focusRancher[]
+{pn_Rancher}. This can be done in a variety of solution layered stacks, to become a fundamental component of a managing multiple Kubernetes ecosystems.
+endif::focusRancher[]
+ifdef::focusK3s[]
+{pn_K3s}.
+This can be done in a variety of scenarios to create an edge-oriented, lightweight Kubernetes cluster deployment.
+endif::focusK3s[]
+ifdef::focusRKE1[]
+{pn_RKE1}.
+This can be done in a variety of scenarios to create an enterprise Kubernetes cluster deployment anywhere.
+endif::focusRKE1[]
+ifdef::focusRKE2[]
+{pn_RKE2}.
+This can be done in a variety of scenarios to create an enterprise Kubernetes cluster deployment anywhere to provide a very secure environment.
+endif::focusRKE2[]
+
+=== Audience
+
+This document is intended for IT decision makers, architects, system administrators and technicians who are implementing a flexible, software-defined Kubernetes
+ifdef::focusRancher[management]
+platform. One should still be familiar with the traditional IT infrastructure pillars -- networking, computing and storage -- along with the local use cases for sizing, scaling and limitations within each pillars' environments.
+
+endif::RA,RC,RI,GS[]
+
+////
+
+Reference Architecture
+
+Description of the reference architecture/Solution Name and the partners included in the design and validation.  Provided as a proof point for designing similar production ready solutions with design considerations, implementation suggestion, and best practices.  May include statement regarding consulting, technical support and the intended audiences.
+////
+
+////
+
+Enterprise Architecture
+
+Beyond the general introduction/overview, in each of following chapters, content includes how this layer provides the necessary attributes to the one above, details and context for this layer itself, and what requirements are needed by the underlying layer. Thus readers are encouraged to scan the entire document to understand the overall solution, even if only expected to focus on a certain layer's aspect.
+
+////
+
